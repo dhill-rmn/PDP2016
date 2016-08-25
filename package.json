@@ -2,7 +2,7 @@
   "name": "pdp-2016",
   "version": "1.0.0",
   "description": "Dav Hill RMN Personal Development Plan 2016",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dhill-rmn/PDP-2016#readme",
   "dependencies": {
+    "babel-polyfill": "^6.13.0",
     "bower": "^1.7.9",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
@@ -26,9 +27,18 @@
     "gulp-less-sourcemap": "^1.4.3",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
+    "jquery": "^3.1.0",
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
     "morgan": "^1.7.0",
+    "react": "^15.3.1",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "webpack": "^2.0.5-beta",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.15.0"
   }
 }

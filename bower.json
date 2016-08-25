@@ -1,7 +1,7 @@
 {
   "name": "pdp-2016",
   "description": "Dav Hill RMN Personal Development Plan 2016",
-  "main": "index.js",
+  "main": "app/index.js",
   "authors": [
     "dhill"
   ],
