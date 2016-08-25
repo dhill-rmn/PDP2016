@@ -104,7 +104,9 @@ gulp.task('jslint', function () {
 });
 
 // DEFINE TASKS
-gulp.task('default', ['css', 'html', 'js', 'img']);
+gulp.task('default', ['bower', 'css', 'html', 'js', 'img']);
+
+gulp.task('bower', ['copy:bower']);
 
 gulp.task('clean', ['clean:html', 'clean:css', 'clean:less', 'clean:js', 'clean:bower', 'clean:img']);
 
@@ -116,7 +118,7 @@ gulp.task('html', ['copy:html']);
 
 gulp.task('img', ['copy:img']);
 
-gulp.task('js', ['jscs', 'jslint']);
+gulp.task('js', ['jscs', 'jslint', 'copy:js']);
 
 gulp.task('watch', function () {
 	livereload.listen();
