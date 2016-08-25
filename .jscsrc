@@ -1,0 +1,17 @@
+{
+  "preset": "crockford",
+  "disallowDanglingUnderscores": true,
+  "disallowYodaConditions": true,
+  "requireDollarBeforejQueryAssignment": true,
+  "requireFunctionDeclarations": true,
+  "requireLineBreakAfterVariableAssignment": true,
+  "requireMultipleVarDecl": "onevar",
+  "requirePaddingNewLineAfterVariableDeclaration": true,
+  "requirePaddingNewLinesAfterBlocks": { "allExcept": ["inProperties", "inCallExpressions"] },
+  "requirePaddingNewLinesAfterUseStrict": true,
+  "requireSpacesInsideObjectBrackets": "all",
+  "requireVarDeclFirst": true,
+  "validateIndentation": "\t",
+  "validateParameterSeparator": ", ",
+  "validateQuoteMarks": "'"
+}
