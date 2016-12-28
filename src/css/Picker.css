@@ -1,0 +1,82 @@
+.Picker-header {
+    height: 240px;
+    border-bottom: 0.25rem solid #333;
+}
+
+.Picker-logo {
+    position: relative;
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+}
+
+.Picker-logo img.Picker-football {
+    animation: Picker-football-spin infinite 20s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 160px;
+}
+
+.Picker-logo img.Picker-react {
+    animation: Picker-react-spin infinite 20s linear;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    height: 280px;
+    width: 280px;
+}
+
+.list-of-leagues {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.list-of-leagues li {
+    border: 1px solid #333;
+    border-top-width: 0;
+}
+
+.list-of-leagues li:first-child {
+    border-top-width: 1px;
+}
+
+.list-of-leagues a {
+    transition: all 0.25s;
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    line-height: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list-of-leagues a:hover {
+    padding-right: 0.75rem;
+}
+
+.list-of-leagues li .country-flag {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+}
+
+.list-of-leagues li .chevron {
+    float: right;
+    font-size: 2rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@keyframes Picker-football-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes Picker-react-spin {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}

@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4d4d4;
+    color: #333;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    background-color: #e6e6e6;
+}
+
+.App {
+    text-align: center;
+    display: flex;
+    height: 90vh;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.App > * {
+    flex: 1 1 50%;
+    padding: 2rem;
+    border: 0.25rem solid #333;
+    border-left-width: 0;
+    position: relative;
+    background-color: #fff;
+}
+
+.App > *:first-child {
+    border-left-width: 0.25rem;
+}

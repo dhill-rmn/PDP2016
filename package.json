@@ -1,44 +1,20 @@
 {
-  "name": "pdp-2016",
-  "version": "1.0.0",
-  "description": "Dav Hill RMN Personal Development Plan 2016",
-  "main": "app/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dhill-rmn/PDP-2016.git"
-  },
-  "author": "dhill",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dhill-rmn/PDP-2016/issues"
-  },
-  "homepage": "https://github.com/dhill-rmn/PDP-2016#readme",
-  "dependencies": {
-    "babel-polyfill": "^6.13.0",
-    "bower": "^1.7.9",
-    "express": "^4.14.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-jscs": "^4.0.0",
-    "gulp-jshint": "^2.0.1",
-    "gulp-less-sourcemap": "^1.4.3",
-    "gulp-livereload": "^3.8.1",
-    "gulp-plumber": "^1.1.0",
-    "jquery": "^3.1.0",
-    "jshint": "^2.9.3",
-    "jshint-stylish": "^2.2.1",
-    "morgan": "^1.7.0",
-    "react": "^15.3.1",
-    "serve-favicon": "^2.3.0"
-  },
+  "name": "pdp-app",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "webpack": "^2.0.5-beta",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-dev-server": "^1.15.0"
+    "react-scripts": "0.8.4"
+  },
+  "dependencies": {
+    "re-base": "^2.5.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "4.0.0-alpha.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
