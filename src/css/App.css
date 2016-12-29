@@ -14,10 +14,6 @@ a:visited {
     color: #333;
 }
 
-a:hover {
-    background-color: #e6e6e6;
-}
-
 .App {
     text-align: center;
     display: flex;

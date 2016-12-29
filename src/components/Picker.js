@@ -1,8 +1,9 @@
 import React from 'react';
-import { Match } from 'react-router';
+import { Link, Match } from 'react-router';
 
 import League from './League';
 import Round from './Round';
+import Fixtures from './Fixtures';
 
 import footballIcon from '../css/images/football.svg';
 import reactIcon from '../css/images/react.svg';
@@ -14,6 +15,7 @@ class Picker extends React.Component {
             <div className="Picker">
                 <div className="Picker-header">
                     <div className="Picker-logo">
+                        <Link to="/"></Link>
                         <img src={footballIcon} className="Picker-football" alt="football-logo" />
                         <img src={reactIcon} className="Picker-react" alt="react-logo" />
                     </div>
@@ -32,11 +34,7 @@ class Picker extends React.Component {
                     </ul>
                 )} />
 
-                <Match exactly pattern="/league/:leagueId/round/:roundId" render={({ params, pathname }) => (
-                    <ul className="list list-of-fixtures">
-                        <li>foo</li>
-                    </ul>
-                )} />
+                <Match exactly pattern="/league/:leagueId/round/:roundId" component={Fixtures} />
             </div>
         );
     }

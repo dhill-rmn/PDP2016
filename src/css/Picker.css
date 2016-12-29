@@ -10,6 +10,15 @@
     width: 160px;
 }
 
+.Picker-logo a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
 .Picker-logo img.Picker-football {
     animation: Picker-football-spin infinite 20s linear;
     position: absolute;
@@ -54,6 +63,7 @@
 }
 
 .list a:hover {
+    background-color: #e6e6e6;
     padding-right: 0.75rem;
 }
 
