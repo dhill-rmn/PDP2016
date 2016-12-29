@@ -8,16 +8,16 @@ import '../css/App.css';
 
 class App extends React.Component {
 
-    constructor() {
+    constructor(params) {
         super();
 
-        this.state = initialState
+        this.state = initialState;
     }
 
     render() {
         return (
             <div className="App">
-                <Picker leagues={this.state.leagues} />
+                <Picker leagues={this.state.leagues} rounds={this.state.rounds} />
                 <Watch />
             </div>
         );

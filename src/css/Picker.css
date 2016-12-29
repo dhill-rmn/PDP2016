@@ -28,22 +28,22 @@
     width: 280px;
 }
 
-.list-of-leagues {
+.list {
     list-style: none;
     text-align: left;
     padding: 0;
 }
 
-.list-of-leagues li {
+.list li {
     border: 1px solid #333;
     border-top-width: 0;
 }
 
-.list-of-leagues li:first-child {
+.list li:first-child {
     border-top-width: 1px;
 }
 
-.list-of-leagues a {
+.list a {
     transition: all 0.25s;
     display: inline-block;
     width: 100%;
@@ -53,8 +53,15 @@
     text-decoration: none;
 }
 
-.list-of-leagues a:hover {
+.list a:hover {
     padding-right: 0.75rem;
+}
+
+.list li .chevron {
+    float: right;
+    font-size: 2rem;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .list-of-leagues li .country-flag {
@@ -62,13 +69,6 @@
     width: 2rem;
     vertical-align: middle;
     margin-right: 1.5rem;
-}
-
-.list-of-leagues li .chevron {
-    float: right;
-    font-size: 2rem;
-    vertical-align: middle;
-    display: inline-block;
 }
 
 @keyframes Picker-football-spin {

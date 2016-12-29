@@ -2,6 +2,7 @@ import React from 'react';
 import { Match } from 'react-router';
 
 import League from './League';
+import Round from './Round';
 
 import footballIcon from '../css/images/football.svg';
 import reactIcon from '../css/images/react.svg';
@@ -20,13 +21,21 @@ class Picker extends React.Component {
                 </div>
 
                 <Match exactly pattern="/" render={() => (
-                    <ul className="list-of-leagues">
-                        {Object.keys(this.props.leagues).map(key => <League details={this.props.leagues[key]} key={key} id={key} />)}
+                    <ul className="list list-of-leagues">
+                        {this.props.leagues.map((league, index) => <League details={league} key={index} />)}
                     </ul>
                 )} />
 
-                <Match pattern="/league/:leaugeId" render={() => (
-                    <p>foobar</p>
+                <Match exactly pattern="/league/:leagueId" render={({ params, pathname }) => (
+                    <ul className="list list-of-rounds">
+                        {this.props.rounds[params.leagueId].map((round, index) => <Round details={round} key={index} pathname={pathname} />)}
+                    </ul>
+                )} />
+
+                <Match exactly pattern="/league/:leagueId/round/:roundId" render={({ params, pathname }) => (
+                    <ul className="list list-of-fixtures">
+                        <li>foo</li>
+                    </ul>
                 )} />
             </div>
         );

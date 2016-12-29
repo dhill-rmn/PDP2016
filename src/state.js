@@ -1,26 +1,17 @@
+import leagues from './data/leagues.json';
+import roundsEredivisie from './data/rounds-eredivisie.json';
+import roundsLiga from './data/rounds-liga.json';
+import roundsPremierLeague from './data/rounds-premier-league.json';
+import roundsSerieA from './data/rounds-serie-a.json';
+
 const state = {
-	leagues: {
-		bundesliga: {
-			"name": "Bundesliga",
-			"nation": "Germany",
-			"level": "1"
-		},
-		"premier-league": {
-			"name": "Premier League",
-			"nation": "England",
-			"level": "1"
-		},
-		"serie-a": {
-			"name": "Serie A",
-			"nation": "Italy",
-			"level": "1"
-		},
-		"serie-b": {
-			"name": "Serie B",
-			"nation": "Italy",
-			"level": "2"
-		}
-	}
-}
+    leagues,
+    rounds: {
+        'eredivisie': roundsEredivisie,
+        'liga': roundsLiga,
+        'premier-league': roundsPremierLeague,
+        'serie-a': roundsSerieA
+    }
+};
 
 export default state;

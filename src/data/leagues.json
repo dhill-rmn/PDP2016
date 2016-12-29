@@ -1,0 +1,38 @@
+[
+  {
+    "identifier": "qpmsnsiolyrlonrqgyctzckur8az8vts",
+    "league_slug": "eredivisie",
+    "name": "Eredivisie",
+    "nation": "Netherlands",
+    "level": "1",
+    "federation": "UEFA",
+    "cup": false
+  },
+  {
+    "identifier": "8j17lcoic2uyv5qd7ctkozxop4osftj6",
+    "league_slug": "liga",
+    "name": "Liga",
+    "nation": "Spain",
+    "level": "1",
+    "federation": "UEFA",
+    "cup": false
+  },
+  {
+    "identifier": "726a53a8c50d6c7a66fe0ab16bdf9bb1",
+    "league_slug": "premier-league",
+    "name": "Premier League",
+    "nation": "England",
+    "level": "1",
+    "federation": "UEFA",
+    "cup": false
+  },
+  {
+    "identifier": "bc425f51d5ee924580c35c38da138de8",
+    "league_slug": "serie-a",
+    "name": "Serie A",
+    "nation": "Italy",
+    "level": "1",
+    "federation": "UEFA",
+    "cup": false
+  }
+]

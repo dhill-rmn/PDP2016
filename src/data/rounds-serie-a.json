@@ -1,0 +1,268 @@
+[
+  {
+    "identifier": "ojowe6b9tg7gbjohnhq5l0muk5drfhl0",
+    "name": "Round 1",
+    "start_date": "2016-08-20T18:00:00+0200",
+    "end_date": "2016-08-21T20:45:00+0200",
+    "round_slug": "round-1"
+  },
+  {
+    "identifier": "jyqs9xnrgzqb9ylhyba4bbunfjxaynug",
+    "name": "Round 2",
+    "start_date": "2016-08-27T18:00:00+0200",
+    "end_date": "2016-08-28T20:45:00+0200",
+    "round_slug": "round-2"
+  },
+  {
+    "identifier": "wgnq7d4kqit2cx9bxfbvdsib7klpqwai",
+    "name": "Round 3",
+    "start_date": "2016-09-10T18:00:00+0200",
+    "end_date": "2016-09-12T20:45:00+0200",
+    "round_slug": "round-3"
+  },
+  {
+    "identifier": "8ats81pyyrpclhmjpzk8bfpaugxasn23",
+    "name": "Round 4",
+    "start_date": "2016-09-16T20:45:00+0200",
+    "end_date": "2016-09-18T20:45:00+0200",
+    "round_slug": "round-4"
+  },
+  {
+    "identifier": "smazvhjlyr4lumnocgwyl83mqgaf5srd",
+    "name": "Round 5",
+    "start_date": "2016-09-20T20:45:00+0200",
+    "end_date": "2016-09-21T20:45:00+0200",
+    "round_slug": "round-5"
+  },
+  {
+    "identifier": "bbybxwijycgranhn5eikvf9psukf30zj",
+    "name": "Round 6",
+    "start_date": "2016-09-24T18:00:00+0200",
+    "end_date": "2016-09-26T21:00:00+0200",
+    "round_slug": "round-6"
+  },
+  {
+    "identifier": "gwumrnlo6jap1ikf7pf8ydgqampwcj6h",
+    "name": "Round 7",
+    "start_date": "2016-10-01T18:00:00+0200",
+    "end_date": "2016-10-02T20:45:00+0200",
+    "round_slug": "round-7"
+  },
+  {
+    "identifier": "uwggg2cpodihsbccilwwekwpbhswctwd",
+    "name": "Round 8",
+    "start_date": "2016-10-15T15:00:00+0200",
+    "end_date": "2016-10-17T20:45:00+0200",
+    "round_slug": "round-8"
+  },
+  {
+    "identifier": "ubc4kvqfxvlsgix4epqkqv0xirygza37",
+    "name": "Round 9",
+    "start_date": "2016-10-22T18:00:00+0200",
+    "end_date": "2016-10-23T20:45:00+0200",
+    "round_slug": "round-9"
+  },
+  {
+    "identifier": "uwaq0lhzqhxqtof8zkcmrbtrjeooyuvv",
+    "name": "Round 10",
+    "start_date": "2016-10-25T20:45:00+0200",
+    "end_date": "2016-10-27T20:45:00+0200",
+    "round_slug": "round-10"
+  },
+  {
+    "identifier": "ah7bbb84gu3uk5dkyhqdssascjsyhqbf",
+    "name": "Round 11",
+    "start_date": "2016-10-29T18:00:00+0200",
+    "end_date": "2016-10-31T21:00:00+0100",
+    "round_slug": "round-11"
+  },
+  {
+    "identifier": "bnucupewahljtfutnr2olctuqyjktgfn",
+    "name": "Round 12",
+    "start_date": "2016-11-05T18:00:00+0100",
+    "end_date": "2016-11-06T20:45:00+0100",
+    "round_slug": "round-12"
+  },
+  {
+    "identifier": "pckd3zkxsgblez31ux1mbozisnqp3u2a",
+    "name": "Round 13",
+    "start_date": "2016-11-19T15:00:00+0100",
+    "end_date": "2016-11-20T20:45:00+0100",
+    "round_slug": "round-13"
+  },
+  {
+    "identifier": "khuthjjoqoclyl0pmtlvo8hl0hohjxwi",
+    "name": "Round 14",
+    "start_date": "2016-11-26T18:00:00+0100",
+    "end_date": "2016-11-28T21:00:00+0100",
+    "round_slug": "round-14"
+  },
+  {
+    "identifier": "6haq0k1pylljn2zicjxufrd26mdhagmi",
+    "name": "Round 15",
+    "start_date": "2016-12-02T20:45:00+0100",
+    "end_date": "2016-12-05T21:00:00+0100",
+    "round_slug": "round-15"
+  },
+  {
+    "identifier": "bjn9nq8uwdokuioogszmlblogaee5zsf",
+    "name": "Round 16",
+    "start_date": "2016-12-10T18:00:00+0100",
+    "end_date": "2016-12-12T21:00:00+0100",
+    "round_slug": "round-16"
+  },
+  {
+    "identifier": "48pwme1856qoegf85dymk1lniqoyd9wq",
+    "name": "Round 17",
+    "start_date": "2016-12-17T15:00:00+0100",
+    "end_date": "2016-12-18T20:45:00+0100",
+    "round_slug": "round-17"
+  },
+  {
+    "identifier": "rbwjcerqrvbm0sbkogct8k9upjbbbpnq",
+    "name": "Round 18",
+    "start_date": "2016-12-20T20:45:00+0100",
+    "end_date": "2017-02-08T20:45:00+0100",
+    "round_slug": "round-18"
+  },
+  {
+    "identifier": "7kwreg0qlo9czkvm8pw60nrzslgaxhtb",
+    "name": "Round 19",
+    "start_date": "2017-01-07T18:00:00+0100",
+    "end_date": "2017-01-08T20:45:00+0100",
+    "round_slug": "round-19"
+  },
+  {
+    "identifier": "dviuapuzekigduvhh5mursluzur9nkur",
+    "name": "Round 20",
+    "start_date": "2017-01-14T18:00:00+0100",
+    "end_date": "2017-01-16T20:45:00+0100",
+    "round_slug": "round-20"
+  },
+  {
+    "identifier": "cf8l0czr4mwkatu8ggfzovjoadcag84x",
+    "name": "Round 21",
+    "start_date": "2017-01-21T18:00:00+0100",
+    "end_date": "2017-01-22T20:45:00+0100",
+    "round_slug": "round-21"
+  },
+  {
+    "identifier": "wjjzh3zc8j7dqhlg69rfpg476lph2atd",
+    "name": "Round 22",
+    "start_date": "2017-01-28T15:00:00+0100",
+    "end_date": "2017-01-29T20:45:00+0100",
+    "round_slug": "round-22"
+  },
+  {
+    "identifier": "1uyrfcxptq96nzgybzzg446dompx47zm",
+    "name": "Round 23",
+    "start_date": "2017-02-04T20:45:00+0100",
+    "end_date": "2017-02-07T20:45:00+0100",
+    "round_slug": "round-23"
+  },
+  {
+    "identifier": "vcslivgojxsuhepcrh16ruatx2ni62q4",
+    "name": "Round 24",
+    "start_date": "2017-02-10T20:45:00+0100",
+    "end_date": "2017-02-13T20:45:00+0100",
+    "round_slug": "round-24"
+  },
+  {
+    "identifier": "67d1klzno28kbrrfydflpowgcnx9vxp3",
+    "name": "Round 25",
+    "start_date": "2017-02-17T20:45:00+0100",
+    "end_date": "2017-02-19T20:45:00+0100",
+    "round_slug": "round-25"
+  },
+  {
+    "identifier": "hqf4ofjawvdmtzrishcrqwtyytba13pd",
+    "name": "Round 26",
+    "start_date": "2017-02-26T15:00:00+0100",
+    "end_date": "2017-02-26T15:00:00+0100",
+    "round_slug": "round-26"
+  },
+  {
+    "identifier": "wgxvswwbbqegxahb65rxjxckzmosevxo",
+    "name": "Round 27",
+    "start_date": "2017-03-05T15:00:00+0100",
+    "end_date": "2017-03-05T15:00:00+0100",
+    "round_slug": "round-27"
+  },
+  {
+    "identifier": "e6oajqxe0euc1vfblzudi3cwn9vofpc7",
+    "name": "Round 28",
+    "start_date": "2017-03-12T15:00:00+0100",
+    "end_date": "2017-03-12T15:00:00+0100",
+    "round_slug": "round-28"
+  },
+  {
+    "identifier": "cqslpemapfack3yzn8eyhli27n13ny3c",
+    "name": "Round 29",
+    "start_date": "2017-03-19T15:00:00+0100",
+    "end_date": "2017-03-19T15:00:00+0100",
+    "round_slug": "round-29"
+  },
+  {
+    "identifier": "rbiiye1tpe7fqj1vz6epzlb0tzjxqjpw",
+    "name": "Round 30",
+    "start_date": "2017-04-02T15:00:00+0200",
+    "end_date": "2017-04-02T15:00:00+0200",
+    "round_slug": "round-30"
+  },
+  {
+    "identifier": "sheown5lqaevnvyhkve6yjvvkuny3cyg",
+    "name": "Round 31",
+    "start_date": "2017-04-09T15:00:00+0200",
+    "end_date": "2017-04-09T15:00:00+0200",
+    "round_slug": "round-31"
+  },
+  {
+    "identifier": "0jjdm9cp8offcrwjkeyzfuknybuh4txc",
+    "name": "Round 32",
+    "start_date": "2017-04-15T15:00:00+0200",
+    "end_date": "2017-04-15T15:00:00+0200",
+    "round_slug": "round-32"
+  },
+  {
+    "identifier": "a2yrva332bq0i7lwlbj6uiac74psnhby",
+    "name": "Round 33",
+    "start_date": "2017-04-23T15:00:00+0200",
+    "end_date": "2017-04-23T15:00:00+0200",
+    "round_slug": "round-33"
+  },
+  {
+    "identifier": "omeee6npe9dkrf0wvqo1fze3e46ahvwh",
+    "name": "Round 34",
+    "start_date": "2017-04-30T15:00:00+0200",
+    "end_date": "2017-04-30T15:00:00+0200",
+    "round_slug": "round-34"
+  },
+  {
+    "identifier": "fvqsyg5fuh2osksuuedxts9wdokfl1ng",
+    "name": "Round 35",
+    "start_date": "2017-05-07T15:00:00+0200",
+    "end_date": "2017-05-07T15:00:00+0200",
+    "round_slug": "round-35"
+  },
+  {
+    "identifier": "fbrhugd2ovq4x5dnkty4huax9dfmy5v8",
+    "name": "Round 36",
+    "start_date": "2017-05-14T15:00:00+0200",
+    "end_date": "2017-05-14T15:00:00+0200",
+    "round_slug": "round-36"
+  },
+  {
+    "identifier": "5rhpkwwworrxo4htsruxraln3e5cxyg6",
+    "name": "Round 37",
+    "start_date": "2017-05-21T15:00:00+0200",
+    "end_date": "2017-05-21T15:00:00+0200",
+    "round_slug": "round-37"
+  },
+  {
+    "identifier": "6gmpwyfkhsynchgvrw15hdfiypkyb9uq",
+    "name": "Round 38",
+    "start_date": "2017-05-28T15:00:00+0200",
+    "end_date": "2017-05-28T15:00:00+0200",
+    "round_slug": "round-38"
+  }
+]
