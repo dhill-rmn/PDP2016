@@ -16,10 +16,10 @@ class App extends React.Component {
 
     render() {
         return (
-          <div className="App">
-              <Picker leagues={this.state.leagues} />
-              <Watch />
-          </div>
+            <div className="App">
+                <Picker leagues={this.state.leagues} />
+                <Watch />
+            </div>
         );
     }
 }

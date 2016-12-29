@@ -10,7 +10,7 @@ import '../css/Picker.css';
 class Picker extends React.Component {
     render() {
         return (
-    		<div className="Picker">
+            <div className="Picker">
                 <div className="Picker-header">
                     <div className="Picker-logo">
                         <img src={footballIcon} className="Picker-football" alt="football-logo" />
@@ -28,7 +28,7 @@ class Picker extends React.Component {
                 <Match pattern="/league/:leaugeId" render={() => (
                     <p>foobar</p>
                 )} />
-    		</div>
+            </div>
         );
     }
 }

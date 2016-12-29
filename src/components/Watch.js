@@ -5,11 +5,11 @@ import '../css/Watch.css';
 class Watch extends React.Component {
     render() {
         return (
-    		<div className="Watch">
+            <div className="Watch">
                 <p className="Watch-intro">
                     To get started you must login.
                 </p>
-    		</div>
+            </div>
         );
     }
 }
