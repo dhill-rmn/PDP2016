@@ -34,7 +34,7 @@ class Picker extends React.Component {
                     </ul>
                 )} />
 
-                <Match exactly pattern="/league/:leagueId/round/:roundId" component={Fixtures} />
+                <Match exactly pattern="/league/:leagueId/round/:roundId" render={({ params }) => <Fixtures {...this.props} toggleSelectFixture={this.props.toggleSelectFixture} params={params} />} />
             </div>
         );
     }

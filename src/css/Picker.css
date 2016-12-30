@@ -41,6 +41,7 @@
     list-style: none;
     text-align: left;
     padding: 0;
+    overflow: hidden;
 }
 
 .list li {

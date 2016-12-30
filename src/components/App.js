@@ -14,10 +14,14 @@ class App extends React.Component {
         this.state = initialState;
     }
 
+    toggleSelectFixture() {
+        debugger;
+    }
+
     render() {
         return (
             <div className="App">
-                <Picker leagues={this.state.leagues} rounds={this.state.rounds} />
+                <Picker leagues={this.state.leagues} rounds={this.state.rounds} toggleSelectFixture={this.toggleSelectFixture} />
                 <Watch />
             </div>
         );

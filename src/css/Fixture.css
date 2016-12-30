@@ -4,4 +4,60 @@
     padding: 0.5rem 1.25rem;
     line-height: 2rem;
     text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.Fixture:hover {
+    background-color: #e6e6e6;
+}
+
+.fixture-date-heading {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.fixture-date-heading + ul.list-of-fixtures {
+    margin-top: 0.5rem;
+}
+
+.fixture-watch {
+    transition: all 0.25s;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -3.5rem;
+    width: 3rem;
+    line-height: 3rem;
+    border: 2px solid #61DAFB;
+    background-color: #fff;
+}
+
+.Fixture:hover .fixture-watch {
+    left: -1px;
+}
+
+.fixture-watch img {
+    height: 60%;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.home-team,
+.away-team {
+    padding: 0 1rem;
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+}
+
+.away-team {
+    text-align: left;
+}
+
+.fixture-start-time {
+    font-size: 0.8rem;
+    color: #999;
+    position: absolute;
+    right: 1rem;
 }
