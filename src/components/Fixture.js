@@ -1,17 +1,22 @@
 import React from 'react';
 import moment from 'moment';
+import classNames from 'classnames';
 
 import eye from '../css/images/eye.svg';
 import '../css/Fixture.css';
 
 class Fixture extends React.Component {
     render() {
-        const { home, away, date_match } = this.props.details;
+        const { home, away, date_match, selected } = this.props.details
+        const listClass = classNames({
+            'Fixture': true,
+            'selected': !!selected
+        });
 
         return (
-            <li className="Fixture" onClick={() => { this.props.toggleSelectFixture(this.props.details) }}>
+            <li className={listClass} onClick={() => { this.props.toggleSelectFixture(this.props.details, this.props.params) }}>
                 <div className="fixture-watch">
-                    <img src={eye} alt="Watch this fixture" />
+                    <svg className="icon"><use xlinkHref={`${eye}#Layer_1`}></use></svg>
                 </div>
                 <span className="home-team">{home.team}</span>
                 v

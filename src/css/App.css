@@ -18,6 +18,7 @@ a:visited {
     text-align: center;
     display: flex;
     height: 90vh;
+    width: 90%;
     max-width: 1500px;
     margin: 0 auto;
     margin-top: 5vh;

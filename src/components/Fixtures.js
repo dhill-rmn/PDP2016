@@ -5,35 +5,18 @@ import Fixture from './Fixture';
 
 class Fixtures extends React.Component {
 
-    constructor(props) {
-        super();
+    componentDidMount() {
+        const fixtures = this.getFixtures();
 
-        this.props = props;
-
-        const params = this.props.params;
-        const seasonId = '16-17';
-        this.url = `https://sportsop-soccer-sports-open-data-v1.p.mashape.com/v1/leagues/${params.leagueId}/seasons/${seasonId}/rounds/${params.roundId}/matches`;
-        this.headers = {
-            'X-Mashape-Key': 'PNEI8gw7c5mshUFkvXWwr47y8mPGp1rJHlxjsnwvaZY9kq25N5',
-            'Accept': 'application/json'
-        };
-
-        this.state = {
-            loading: true,
-            fixtures: []
+        if (!fixtures.length) {
+            this.props.fetchFixtures(this.props.params);
         }
     }
 
-    componentDidMount() {
-        fetch(this.url, { headers: this.headers })
-            .then(function (response) {
-                response.json().then(function ({ data }) {
-                    this.setState({
-                        loading: false,
-                        fixtures: data.matches
-                    });
-                }.bind(this));
-            }.bind(this));
+    getFixtures() {
+        const { fixtures, params } = this.props;
+
+        return (fixtures[params.leagueId] && fixtures[params.leagueId][params.roundId]) || [];
     }
 
     sortFixtures(fixtures = []) {
@@ -61,11 +44,13 @@ class Fixtures extends React.Component {
     }
 
     render() {
-        if (this.state.loading) {
+        let fixtures = this.getFixtures();
+
+        if (!fixtures.length) {
             return (<p>Loading...</p>);
         }
 
-        let fixtures = this.sortFixtures([...this.state.fixtures])
+        fixtures = this.sortFixtures([...fixtures])
         fixtures = this.splitFixturesToDates(fixtures);
 
         return (
@@ -75,7 +60,7 @@ class Fixtures extends React.Component {
                         <div className="fixture-group" key={index}>
                             <h3 className="fixture-date-heading">{moment(date).format('ddd Do MMMM YYYY')}</h3>
                             <ul className="list list-of-fixtures">
-                                {fixtures[date].map((fixture, index) => <Fixture details={fixture} key={index} toggleSelectFixture={this.props.toggleSelectFixture} />)}
+                                {fixtures[date].map((fixture, index) => <Fixture details={fixture} key={index} toggleSelectFixture={this.props.toggleSelectFixture} params={this.props.params} />)}
                             </ul>
                         </div>
                     )
