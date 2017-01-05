@@ -16,7 +16,7 @@ class Fixture extends React.Component {
         });
 
         return (
-            <li className={listClass} onClick={() => { this.props.toggleSelectFixture(this.props.details, this.props.params) }}>
+            <li className={listClass}}>
                 <div className="fixture-watch">
                     {isExpired ? (
                         <img src={football} className="football" alt="Fixtures is finished" />

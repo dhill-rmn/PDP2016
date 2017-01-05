@@ -76,7 +76,7 @@ class Watch extends React.Component {
                                         <div className="fixture-group" key={index}>
                                             <h5 className="fixture-date-heading">{moment(date).format('ddd Do MMMM YYYY')}</h5>
                                             <ul className="list list-of-fixtures">
-                                                {selections[category][date].map((fixture, index) => <Fixture details={fixture} key={index} toggleSelectFixture={this.props.toggleSelectFixture} params={this.props.params} />)}
+                                                {selections[category][date].map((fixture, index) => <Fixture details={fixture} key={index} onClick={() => this.props.removeFixture(fixture.identifier)} params={this.props.params} />)}
                                             </ul>
                                         </div>
                                     )

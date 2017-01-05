@@ -36,7 +36,7 @@ class Fixtures extends React.Component {
                         <div className="fixture-group" key={index}>
                             <h3 className="fixture-date-heading">{moment(date).format('ddd Do MMMM YYYY')}</h3>
                             <ul className="list list-of-fixtures">
-                                {fixtures[date].map((fixture, index) => <Fixture details={fixture} key={index} toggleSelectFixture={this.props.toggleSelectFixture} params={this.props.params} />)}
+                                {fixtures[date].map((fixture, index) => <Fixture onClick={() => { this.props.toggleSelectFixture(this.props.details, this.props.params) } details={fixture} key={index} toggleSelectFixture={this.props.toggleSelectFixture} params={this.props.params} />)}
                             </ul>
                         </div>
                     )

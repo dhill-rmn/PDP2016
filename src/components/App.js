@@ -78,6 +78,10 @@ class App extends React.Component {
         });
     }
 
+    removeFixture() {
+        debugger;
+    }
+
     sortFixtures(fixtures = []) {
         return fixtures.sort((a, b) => {
             if (a.date_match === b.date_match) {
@@ -106,7 +110,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Picker leagues={this.state.leagues} rounds={this.state.rounds} fixtures={this.state.fixtures} fetchFixtures={this.fetchFixtures} toggleSelectFixture={this.toggleSelectFixture} sortFixtures={this.sortFixtures} splitFixturesToDates={this.splitFixturesToDates} />
-                <Watch selections={this.state.selections} sortFixtures={this.sortFixtures} splitFixturesToDates={this.splitFixturesToDates} />
+                <Watch selections={this.state.selections} sortFixtures={this.sortFixtures} splitFixturesToDates={this.splitFixturesToDates} removeFixture={this.removeFixture} />
             </div>
         );
     }
