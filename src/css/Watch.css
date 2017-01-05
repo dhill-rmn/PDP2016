@@ -9,3 +9,7 @@
 .watch-category-heading {
     text-decoration: underline;
 }
+
+.Watch .Fixture.selected {
+    background-color: #fff;
+}

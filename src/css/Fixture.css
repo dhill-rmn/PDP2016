@@ -49,15 +49,6 @@
     vertical-align: middle;
 }
 
-.Fixture .fixture-watch .eye-white,
-.Fixture.selected .fixture-watch .eye {
-    display: none;
-}
-
-.Fixture.selected .fixture-watch .eye-white {
-    display: inline;
-}
-
 .home-team,
 .away-team {
     padding: 0 1rem;

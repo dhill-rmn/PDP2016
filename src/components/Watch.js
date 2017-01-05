@@ -21,7 +21,8 @@ class Watch extends React.Component {
     }
 
     organizeWatchedFixtures(fixtures = {}) {
-        const now = moment(1484422284000);
+        // const now = moment(1484422284000);
+        const now = moment();
         const selections = Object.keys(fixtures).reduce((prev, matchId) => {
             const fixture = fixtures[matchId];
             let date = moment(fixture.date_match);
