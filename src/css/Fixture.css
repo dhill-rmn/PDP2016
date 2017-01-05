@@ -43,14 +43,20 @@
     background-color: #61DAFB;
 }
 
-/*.fixture-watch .icon {
-    height: 40px;
-    width: 40px;
+.fixture-watch img {
+    height: 60%;
+    width: 60%;
     vertical-align: middle;
-    fill: none;
-stroke: #3d3d3d;
-stroke-width: 2px;
-}*/
+}
+
+.Fixture .fixture-watch .eye-white,
+.Fixture.selected .fixture-watch .eye {
+    display: none;
+}
+
+.Fixture.selected .fixture-watch .eye-white {
+    display: inline;
+}
 
 .home-team,
 .away-team {

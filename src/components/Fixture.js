@@ -3,6 +3,7 @@ import moment from 'moment';
 import classNames from 'classnames';
 
 import eye from '../css/images/eye.svg';
+import eyeWhite from '../css/images/eye-white.svg';
 import '../css/Fixture.css';
 
 class Fixture extends React.Component {
@@ -16,7 +17,8 @@ class Fixture extends React.Component {
         return (
             <li className={listClass} onClick={() => { this.props.toggleSelectFixture(this.props.details, this.props.params) }}>
                 <div className="fixture-watch">
-                    <svg className="icon"><use xlinkHref={`${eye}#Layer_1`}></use></svg>
+                    <img src={eye} className="eye" alt="Watch this fixture" />
+                    <img src={eyeWhite} className="eye-white" alt="Watching this fixture" />
                 </div>
                 <span className="home-team">{home.team}</span>
                 v
