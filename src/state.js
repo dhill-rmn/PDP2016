@@ -12,7 +12,8 @@ const state = {
         'premier-league': roundsPremierLeague,
         'serie-a': roundsSerieA
     },
-    fixtures: {}
+    fixtures: {},
+    selections: {}
 };
 
 export default state;

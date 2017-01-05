@@ -1,3 +1,11 @@
 .Watch-intro {
     font-size: large;
 }
+
+.watch-category {
+    text-align: left;
+}
+
+.watch-category-heading {
+    text-decoration: underline;
+}

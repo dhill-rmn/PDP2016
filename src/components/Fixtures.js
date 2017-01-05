@@ -19,30 +19,6 @@ class Fixtures extends React.Component {
         return (fixtures[params.leagueId] && fixtures[params.leagueId][params.roundId]) || [];
     }
 
-    sortFixtures(fixtures = []) {
-        return fixtures.sort((a, b) => {
-            if (a.date_match === b.date_match) {
-                return a.home.team < a.home.team;
-            }
-
-            return (Date.parse(a.date_match) < Date.parse(b.date_match)) ? -1 : 1;
-        });
-    }
-
-    splitFixturesToDates(fixtures = []) {
-        return fixtures.reduce((prev, fixture, i, array) => {
-            let date = new Date(fixture.date_match);
-            date.setHours(0);
-            date.setMinutes(0);
-            date = date.toISOString();
-
-            prev[date] = prev[date] || [];
-            prev[date].push(fixture);
-
-            return prev;
-        }, {});
-    }
-
     render() {
         let fixtures = this.getFixtures();
 
@@ -50,8 +26,8 @@ class Fixtures extends React.Component {
             return (<p>Loading...</p>);
         }
 
-        fixtures = this.sortFixtures([...fixtures])
-        fixtures = this.splitFixturesToDates(fixtures);
+        fixtures = this.props.sortFixtures([...fixtures])
+        fixtures = this.props.splitFixturesToDates(fixtures);
 
         return (
             <div>
