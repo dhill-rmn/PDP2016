@@ -1,3 +1,7 @@
+.Watch {
+    overflow: scroll;
+}
+
 .Watch-intro {
     font-size: large;
 }
@@ -12,4 +16,8 @@
 
 .Watch .Fixture.selected {
     background-color: #fff;
+}
+
+.Watch .Fixture.selected:hover {
+    background-color: #f1bbbb;
 }

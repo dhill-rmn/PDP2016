@@ -21,7 +21,6 @@ class Watch extends React.Component {
     }
 
     organizeWatchedFixtures(fixtures = {}) {
-        // const now = moment(1484422284000);
         const now = moment();
         const selections = Object.keys(fixtures).reduce((prev, matchId) => {
             const fixture = fixtures[matchId];
@@ -76,7 +75,7 @@ class Watch extends React.Component {
                                         <div className="fixture-group" key={index}>
                                             <h5 className="fixture-date-heading">{moment(date).format('ddd Do MMMM YYYY')}</h5>
                                             <ul className="list list-of-fixtures">
-                                                {selections[category][date].map((fixture, index) => <Fixture details={fixture} key={index} onClick={() => this.props.removeFixture(fixture.identifier)} params={this.props.params} />)}
+                                                {selections[category][date].map((fixture, index) => <Fixture details={fixture} key={index} onClick={() => this.props.removeFixture(fixture.identifier)} />)}
                                             </ul>
                                         </div>
                                     )

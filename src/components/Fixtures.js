@@ -6,28 +6,21 @@ import Fixture from './Fixture';
 class Fixtures extends React.Component {
 
     componentDidMount() {
-        const fixtures = this.getFixtures();
+        const fixtures = this.props.fixtures;
 
         if (!fixtures.length) {
-            this.props.fetchFixtures(this.props.params);
+            this.props.fetchFixtures();
         }
     }
 
-    getFixtures() {
-        const { fixtures, params } = this.props;
-
-        return (fixtures[params.leagueId] && fixtures[params.leagueId][params.roundId]) || [];
-    }
-
     render() {
-        let fixtures = this.getFixtures();
+        let fixtures = this.props.fixtures;
 
         if (!fixtures.length) {
             return (<p>Loading...</p>);
         }
 
-        fixtures = this.props.sortFixtures([...fixtures])
-        fixtures = this.props.splitFixturesToDates(fixtures);
+        fixtures = this.props.splitFixturesToDates([...fixtures]);
 
         return (
             <div>
@@ -36,7 +29,7 @@ class Fixtures extends React.Component {
                         <div className="fixture-group" key={index}>
                             <h3 className="fixture-date-heading">{moment(date).format('ddd Do MMMM YYYY')}</h3>
                             <ul className="list list-of-fixtures">
-                                {fixtures[date].map((fixture, index) => <Fixture onClick={() => { this.props.toggleSelectFixture(this.props.details, this.props.params) } details={fixture} key={index} toggleSelectFixture={this.props.toggleSelectFixture} params={this.props.params} />)}
+                                {fixtures[date].map((fixture, index) => <Fixture details={fixture} key={index} onClick={() => { this.props.toggleSelectFixture(fixture) }} />)}
                             </ul>
                         </div>
                     )

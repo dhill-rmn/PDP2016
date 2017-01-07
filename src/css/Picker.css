@@ -1,3 +1,7 @@
+.Picker {
+    overflow: scroll;
+}
+
 .Picker-header {
     height: 240px;
     border-bottom: 0.25rem solid #333;

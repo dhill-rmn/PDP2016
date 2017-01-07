@@ -19,6 +19,7 @@ class App extends React.Component {
 
         this.fetchFixtures = this.fetchFixtures.bind(this);
         this.toggleSelectFixture = this.toggleSelectFixture.bind(this);
+        this.removeFixture = this.removeFixture.bind(this);
 
         this.state = initialState;
     }
@@ -44,7 +45,7 @@ class App extends React.Component {
                     const { selections } = this.state;
                     let fixtures = {...this.state.fixtures};
                     fixtures[params.leagueId] = fixtures[params.leagueId] || {};
-                    fixtures[params.leagueId][params.roundId] = data.matches.map(match => {
+                    fixtures[params.leagueId][params.roundId] = this.sortFixtures(data.matches).map(match => {
                         match.selected = !!selections[match.identifier] || false;
 
                         return match;
@@ -78,8 +79,11 @@ class App extends React.Component {
         });
     }
 
-    removeFixture() {
-        debugger;
+    removeFixture(identifier) {
+        const selections = {...this.state.selections};
+
+        selections[identifier] = null;
+        this.setState({ selections });
     }
 
     sortFixtures(fixtures = []) {
@@ -109,7 +113,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Picker leagues={this.state.leagues} rounds={this.state.rounds} fixtures={this.state.fixtures} fetchFixtures={this.fetchFixtures} toggleSelectFixture={this.toggleSelectFixture} sortFixtures={this.sortFixtures} splitFixturesToDates={this.splitFixturesToDates} />
+                <Picker leagues={this.state.leagues} rounds={this.state.rounds} fixtures={this.state.fixtures} fetchFixtures={this.fetchFixtures} toggleSelectFixture={this.toggleSelectFixture} splitFixturesToDates={this.splitFixturesToDates} />
                 <Watch selections={this.state.selections} sortFixtures={this.sortFixtures} splitFixturesToDates={this.splitFixturesToDates} removeFixture={this.removeFixture} />
             </div>
         );
